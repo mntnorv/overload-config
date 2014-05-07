@@ -1,0 +1,9 @@
+.table-view-cell > a.active {
+  background-color: #33B5E5;
+  color: white;
+}
+
+.table-view-cell > a.active:active:not(.btn) {
+  background-color: #1A9BCB;
+  color: white;
+}
