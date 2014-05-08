@@ -5,14 +5,16 @@ $.fn.filterByData = function(prop, val) {
 };
 
 $(document).ready(function() {
-  var radios = $('.table-view.radio');
+  var radios  = $('.table-view.radio');
   var saveBtn = $('#save');
+  var output  = $('#output');
 
   var options = {};
   var hash = window.location.hash.substring(1);
   if (hash) {
     try {
       var parsed = JSON.parse(hash);
+      output.text(JSON.stringify(parsed));
       options = parsed;
     } catch (e) {
       console.error('Error parsing options: ', hash);
