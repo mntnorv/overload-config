@@ -7,10 +7,8 @@ $.fn.filterByData = function(prop, val) {
 $(document).ready(function() {
   var radios  = $('.table-view.radio');
   var saveBtn = $('#save');
-  var output  = $('#output');
 
   var options = $.url().param();
-  output.text(JSON.stringify(options));
 
   radios.each(function (index) {
     var radio = $(this);
