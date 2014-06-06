@@ -33,9 +33,7 @@ $(document).ready(function() {
       var key   = radio.data('name');
       var value = radio.find('.active').first().data('value');
 
-      if (value) {
-        object[key] = value;
-      }
+      object[key] = value;
     });
 
     window.location.href = "pebblejs://close#" + encodeURIComponent(JSON.stringify(object));
